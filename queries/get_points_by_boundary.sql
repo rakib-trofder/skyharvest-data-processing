@@ -32,8 +32,8 @@ WITH input_boundary AS (
 --         11.157212869 60.755148947,
 --         11.157138821 60.754531992,
 --         11.157073742 60.754691924))',
-    4326
-  ) AS geom_wgs84
+            4326
+        ) AS geom_wgs84
 ),
 target_rasters AS (
   SELECT
@@ -63,3 +63,8 @@ unique_intersecting_pixels AS (
 )
 SELECT *
 FROM unique_intersecting_pixels;
+
+
+
+
+
