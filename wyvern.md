@@ -117,3 +117,289 @@ SELECT ST_Value(rast, 1, ST_SetSRID(ST_MakePoint(longitude, latitude), 4326))
 FROM my_raster_table
 WHERE ST_Intersects(rast, ST_SetSRID(ST_MakePoint(longitude, latitude), 4326));
 ```
+
+## 6. SQL Query Reference
+
+This section provides a detailed breakdown of the SQL scripts used for various data processing and analysis tasks on the raster data.
+
+---
+
+### `indecies_calculation/average_based_indecies.sql`
+
+**Action:** Calculates multiple vegetation indices (NDVI, GCI, RECI, NDWI, DVI) for a single, specific geographic point.
+
+**Process:**
+1.  Defines a specific point of interest.
+2.  Finds the raster tile(s) that intersect with that point.
+3.  Extracts the values for all 23 spectral bands at that point's pixel location.
+4.  Calculates the average values for the Red, NIR, Green, and Red-Edge spectral bands based on predefined band groupings.
+5.  Uses these averages to compute the final vegetation indices.
+
+```sql
+WITH specific_point AS (
+  SELECT ST_Transform(
+    ST_SetSRID(
+      ST_MakePoint(151.45131539968017, -27.52619466785564),
+      4326
+    ),
+    (SELECT ST_SRID(rast) FROM wyvern_dragonette_aus LIMIT 1)
+  ) AS geom_proj
+),
+target_rasters AS (
+  SELECT
+    r.rast,
+    sp.geom_proj
+  FROM
+    wyvern_dragonette_aus r,
+    specific_point sp
+  WHERE
+    ST_Intersects(r.rast, sp.geom_proj)
+),
+band_values AS (
+  SELECT
+    (ST_WorldToRasterCoordX(tr.rast, ST_X(tr.geom_proj)))::int AS x,
+    (ST_WorldToRasterCoordY(tr.rast, ST_Y(tr.geom_proj)))::int AS y,
+    ST_AsText(ST_Transform(tr.geom_proj, 4326)) AS point_coordinates_wgs84,
+    jsonb_object_agg(
+      band_num,
+      ST_Value(tr.rast, band_num, 
+        (ST_WorldToRasterCoordX(tr.rast, ST_X(tr.geom_proj)))::int,
+        (ST_WorldToRasterCoordY(tr.rast, ST_Y(tr.geom_proj)))::int
+      )
+    ) AS band_values
+  FROM
+    target_rasters tr,
+    generate_series(1, 23) AS band_num
+  GROUP BY tr.rast, tr.geom_proj
+),
+averages AS (
+  SELECT
+    x,
+    y,
+    point_coordinates_wgs84,
+    -- Calculate band averages from JSON
+    ((band_values->>'9')::numeric + (band_values->>'10')::numeric + 
+     (band_values->>'11')::numeric + (band_values->>'12')::numeric +
+     (band_values->>'13')::numeric + (band_values->>'14')::numeric) / 6.0 AS red_avg,
+    
+    ((band_values->>'16')::numeric + (band_values->>'17')::numeric + 
+     (band_values->>'18')::numeric + (band_values->>'19')::numeric +
+     (band_values->>'20')::numeric + (band_values->>'21')::numeric +
+     (band_values->>'22')::numeric + (band_values->>'23')::numeric) / 8.0 AS nir_avg,
+    
+    ((band_values->>'2')::numeric + (band_values->>'3')::numeric + 
+     (band_values->>'4')::numeric + (band_values->>'5')::numeric) / 4.0 AS green_avg,
+    
+    ((band_values->>'13')::numeric + (band_values->>'14')::numeric + 
+     (band_values->>'15')::numeric + (band_values->>'16')::numeric) / 4.0 AS red_edge_avg
+  FROM
+    band_values
+)
+SELECT
+  point_coordinates_wgs84,
+  red_avg,
+  nir_avg,
+  green_avg,
+  red_edge_avg,
+  -- 1. NDVI (Normalized Difference Vegetation Index)
+  (nir_avg - red_avg) / NULLIF((nir_avg + red_avg), 0) AS ndvi,
+  
+  -- 2. GCI (Green Chlorophyll Index)
+  (nir_avg / NULLIF(green_avg, 0)) - 1 AS gci,
+  
+  -- 3. RECI (Red Edge Chlorophyll Index)
+  (nir_avg / NULLIF(red_edge_avg, 0)) - 1 AS reci,
+  
+  -- 4. NDWI (Normalized Difference Water Index)
+  (green_avg - nir_avg) / NULLIF((green_avg + nir_avg), 0) AS ndwi,
+  
+  -- 5. DVI (Difference Vegetation Index)
+  (nir_avg - red_avg) AS dvi
+FROM
+  averages;
+```
+
+---
+
+### `queries/polygon_based_band_values.sql`
+
+**Action:** Extracts the pixel values for all bands for every pixel that intersects with a given input polygon.
+
+**Process:**
+1.  Defines a polygon of interest in WGS 84.
+2.  Identifies the raster tiles that intersect with this polygon.
+3.  Transforms the polygon's CRS to match the raster's CRS.
+4.  Generates centroids for all pixels within the intersecting raster tiles.
+5.  Filters these centroids to find only those that fall within the transformed polygon.
+6.  For each of these filtered pixels, it retrieves the value for every band.
+
+```sql
+WITH
+input_polygon AS (
+    -- Define the polygon in its original WGS 84 CRS
+    SELECT ST_GeomFromText(
+            'POLYGON((151.45191179600488	-27.526421418791138,
+                    151.45191781261346	-27.526261978664035,
+                    151.45209229426197	-27.52627702018546,
+                    151.4521013191747	-27.526430443703987,
+                    151.45191179600488	-27.526421418791138,
+                    151.45191179600488	-27.526421418791138))',
+            4326
+        ) AS geom_wgs84
+),
+target_raster AS (
+    -- Find the relevant raster tile and transform the polygon to the raster's CRS
+    SELECT
+        r.rast,
+        ST_Transform(ip.geom_wgs84, ST_SRID(r.rast)) AS geom_proj
+    FROM
+        wyvern_dragonette_aus r,
+        input_polygon ip
+    WHERE
+        ST_Intersects(r.rast, ST_Transform(ip.geom_wgs84, ST_SRID(r.rast)))
+),
+all_tile_pixels AS (
+    -- **Step 1: Generate the full set of pixel centroids from the target tile(s).**
+    SELECT
+        (ST_PixelAsCentroids(tr.rast, 1)).*, -- Get x, y, geom
+        tr.rast,                             -- Pass the raster data along
+        tr.geom_proj                         -- Pass the projected polygon along
+    FROM
+        target_raster tr
+),
+intersecting_pixels AS (
+    -- **Step 2: Now, filter the generated pixels.**
+    SELECT
+        rast, x, y, geom
+    FROM
+        all_tile_pixels
+    WHERE
+        ST_Intersects(geom, geom_proj)
+)
+-- **Step 3: Extract values for the filtered pixels for each band.**
+SELECT
+    b.band_num AS band_number,
+    ST_AsText(ST_Transform(px.geom, 4326)) AS pixel_center_coordinates,
+    ST_Value(px.rast, b.band_num, px.x, px.y) AS pixel_value,
+    px.x AS pixel_column,
+    px.y AS pixel_row
+FROM
+    intersecting_pixels px,
+    generate_series(1, ST_NumBands(px.rast)) AS b(band_num)
+ORDER BY
+    band_number, y, x;
+```
+
+---
+
+### `queries/subquery_generator.sql`
+
+**Action:** A meta-query that generates a set of independent SQL queries. This is a strategy for parallel processing.
+
+**Process:**
+1.  Takes a large input polygon.
+2.  Divides that polygon into a grid of smaller, square sub-polygons.
+3.  For each sub-polygon, it constructs a complete, self-contained SQL query string.
+4.  Each generated query is designed to fetch all band values for all pixels within its respective sub-polygon.
+5.  The output is a list of these SQL query strings, which can then be executed in parallel by an external application or script.
+
+```sql
+WITH original_polygon AS (
+  SELECT ST_GeomFromText(
+    'POLYGON((151.45191179600488	-27.526421418791138,
+            151.45191781261346	-27.526261978664035,
+            151.45209229426197	-27.52627702018546,
+            151.4521013191747	-27.526430443703987,
+            151.45191179600488	-27.526421418791138,
+            151.45191179600488	-27.526421418791138))',
+    4326
+  ) AS geom
+),
+original_polygon_3857 AS (
+  SELECT ST_Transform(geom, 3857) AS geom_3857 FROM original_polygon
+),
+grid AS (
+  SELECT g.geom AS cell_3857
+  FROM original_polygon_3857,
+  LATERAL (
+    SELECT (ST_SquareGrid(
+      GREATEST(
+        ST_XMax(geom_3857) - ST_XMin(geom_3857),
+        ST_YMax(geom_3857) - ST_YMin(geom_3857)
+      ) / 4.0,
+      geom_3857
+    )).geom AS geom
+  ) AS g
+),
+sub_polygons AS (
+  SELECT
+    ROW_NUMBER() OVER() as id,
+    ST_Transform(ST_Intersection(ST_Transform(o.geom_3857, 3857), g.cell_3857), 4326) AS sub_geom
+  FROM original_polygon_3857 o
+  JOIN grid g ON ST_Intersects(o.geom_3857, g.cell_3857)
+  WHERE NOT ST_IsEmpty(ST_Intersection(o.geom_3857, g.cell_3857))
+)
+SELECT
+  FORMAT(
+    $QUERY$
+-- Query for Sub-Polygon %s
+WITH input_polygon AS (
+  SELECT ST_GeomFromText('%s', 4326) AS geom_wgs84
+),
+target_raster AS (
+  SELECT r.rast,
+         ST_Transform(ip.geom_wgs84, ST_SRID(r.rast)) AS geom_proj
+  FROM wyvern_dragonette_aus r, input_polygon ip
+  WHERE ST_Intersects(r.rast, ST_Transform(ip.geom_wgs84, ST_SRID(r.rast)))
+),
+all_tile_pixels AS (
+  SELECT (ST_PixelAsCentroids(tr.rast, 1)).*,
+         tr.rast,
+         tr.geom_proj
+  FROM target_raster tr
+),
+intersecting_pixels AS (
+  SELECT rast, x, y, geom
+  FROM all_tile_pixels
+  WHERE ST_Intersects(geom, geom_proj)
+)
+SELECT b.band_num AS band_number,
+       ST_AsText(ST_Transform(px.geom, 4326)) AS pixel_center_coordinates,
+       ST_Value(px.rast, b.band_num, px.x, px.y) AS pixel_value,
+       px.x AS pixel_column,
+       px.y AS pixel_row
+FROM intersecting_pixels px,
+     generate_series(1, ST_NumBands(px.rast)) AS b(band_num)
+ORDER BY band_number, y, x;
+$QUERY$,
+    id,
+    ST_AsText(sub_geom)
+  ) AS parallel_query
+FROM sub_polygons;
+```
+
+---
+
+### `queries/metadata.sql`
+
+**Action:** Retrieves a comprehensive set of metadata for every raster tile in the table.
+
+**Process:** It queries the `wyvern_dragonette_aus` table and uses various `ST_*` functions to extract metadata for each raster record (`rid`). This includes dimensions, spatial reference, pixel size, and the bounding box.
+
+```sql
+SELECT
+  rid,
+  ST_Width(rast) AS width,
+  ST_Height(rast) AS height,
+  ST_NumBands(rast) AS num_bands,
+  ST_SRID(rast) AS srid,
+  ST_ScaleX(rast) AS scale_x,
+  ST_ScaleY(rast) AS scale_y,
+  ST_SkewX(rast) AS skew_x,
+  ST_SkewY(rast) AS skew_y,
+  ST_UpperLeftX(rast) AS ul_x,
+  ST_UpperLeftY(rast) AS ul_y,
+  ST_Metadata(rast) AS metadata_json,
+  ST_Envelope(rast) AS bounding_box_geom
+FROM wyvern_dragonette_aus;
+```
