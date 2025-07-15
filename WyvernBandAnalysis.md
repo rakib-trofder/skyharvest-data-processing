@@ -28,12 +28,67 @@ The table below provides a summary of the band-to-wavelength mapping, including 
 
 ---
 
-## Use Case Summary
+## 🌿 Vegetation Indices Using Wyvern Bands
 
-- **Vegetation Monitoring**: Bands transitioning from red to NIR (e.g., B13–B23) are critical for indices like NDVI.
-- **Crop Classification**: High spectral resolution supports distinguishing crop types by reflectance.
-- **Land Cover Analysis**: Broad coverage from 503–799 nm enables robust environmental and land use monitoring.
+### 1. NDVI – Normalized Difference Vegetation Index
+**Formula:**  
+`NDVI = (NIR - Red) / (NIR + Red)`
+
+- Healthy vegetation: **0.2 – 0.8**
+- Bare soil: **~0.1**
+- Water: **< 0**
+
+**Applications:**  
+Crop health monitoring, drought assessment, biomass analysis.
 
 ---
 
-*This markdown is based on visual analysis of Wyvern’s 23-band imaging data and is intended for use in geospatial or agricultural remote sensing contexts.*
+### 2. EVI – Enhanced Vegetation Index  
+**Formula:**  
+`EVI = G × ((NIR - Red) / (NIR + C1 × Red - C2 × Blue + L))`  
+*Coefficients:* G=2.5, L=1, C1=6, C2=7.5
+
+- Better performance in high biomass or dense canopy
+- Healthy vegetation: **0.4 – 0.9**
+
+**Applications:**  
+Rainforest monitoring, canopy density studies.
+
+---
+
+### 3. SAVI – Soil Adjusted Vegetation Index  
+**Formula:**  
+`SAVI = ((NIR - Red) / (NIR + Red + L)) × (1 + L)`  
+*L (soil brightness factor) = 0.5*
+
+- Useful in arid or sparsely vegetated regions  
+- Sparse vegetation: **0.2 – 0.4**
+
+**Applications:**  
+Dryland agriculture, early growth stages.
+
+---
+
+### 4. NDWI – Normalized Difference Water Index  
+**Formula:**  
+`NDWI = (Green - NIR) / (Green + NIR)`
+
+- Water bodies: **> 0.3**
+- Water-stressed vegetation: **< 0.1**
+
+**Applications:**  
+Irrigation monitoring, drought detection, wetland mapping.
+
+---
+
+### 5. NDRE – Normalized Difference Red Edge  
+**Formula:**  
+`NDRE = (NIR - RedEdge) / (NIR + RedEdge)`
+
+- Sensitive to chlorophyll and nitrogen levels  
+- Healthy crops: **0.2 – 0.5**
+
+**Applications:**  
+Precision agriculture, early stress detection, crop management.
+
+---
