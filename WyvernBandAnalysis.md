@@ -8,7 +8,7 @@ This document provides a visual and analytical overview of the 23-band multispec
 
 The bar chart below illustrates the relationship between band numbers and their corresponding wavelengths in nanometers (nm). The color of each bar represents its approximate position in the visible to near-infrared (NIR) electromagnetic spectrum.
 
-![Wavelengths by Band Number](images\Band-Wavelength-Spectrum-Mapping.png)
+![Wavelengths by Band Number](images/Band-Wavelength-Spectrum-Mapping.png)
 
 ---
 
@@ -16,7 +16,7 @@ The bar chart below illustrates the relationship between band numbers and their 
 
 The scatter plot below shows how each band fits into the electromagnetic spectrum. Each dot represents a band and is color-coded according to its spectral region (e.g., green, red, NIR).
 
-![Electromagnetic Spectrum Region by Wavelength](images\Electromagnetic-Spectrum-Region-By-Wavelngth.png)
+![Electromagnetic Spectrum Region by Wavelength](images/Electromagnetic-Spectrum-Region-By-Wavelngth.png)
 
 ---
 
@@ -24,7 +24,7 @@ The scatter plot below shows how each band fits into the electromagnetic spectru
 
 The table below provides a summary of the band-to-wavelength mapping, including the associated spectral region and visual color name. This mapping is helpful for interpreting and visualizing multispectral imagery for remote sensing applications.
 
-![Band–Wavelength–Spectrum Mapping](images\Band-Wavelength-Spectrum-Mapping.png)
+![Band–Wavelength–Spectrum Mapping](images/Band-Wavelength-Spectrum-Mapping.png)
 
 ---
 
