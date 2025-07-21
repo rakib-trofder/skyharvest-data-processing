@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    ports:
+      - "4114:4114"
+    volumes:
+      # Mount the current directory into the container's /app directory
+      # This is useful for development as changes to your code will be reflected without rebuilding
+      - .:/app
+    environment:
+      # Set FLASK_ENV to development for hot-reloading during development
+      # Change to production for deployment
+      FLASK_ENV: development
+    # Command to run the Flask application, matching the Dockerfile CMD
+    command: flask run --host=0.0.0.0 --port=4114
