@@ -1,0 +1,745 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Talaimoja_Kakonhat_1",
+        "region": "Rajshahi, Bangladesh",
+        "center_lat": 24.5251,
+        "center_lng": 88.91819999999998,
+        "source": "AgriPulse Screenshot"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.9142,
+              24.5201
+            ],
+            [
+              88.9142,
+              24.530099999999997
+            ],
+            [
+              88.92219999999999,
+              24.530099999999997
+            ],
+            [
+              88.92219999999999,
+              24.5201
+            ],
+            [
+              88.9142,
+              24.5201
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Talaimoja_Kakonhat_2",
+        "region": "Rajshahi, Bangladesh",
+        "center_lat": 24.5251,
+        "center_lng": 88.9262,
+        "source": "AgriPulse Screenshot"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.92219999999999,
+              24.5201
+            ],
+            [
+              88.92219999999999,
+              24.530099999999997
+            ],
+            [
+              88.9302,
+              24.530099999999997
+            ],
+            [
+              88.9302,
+              24.5201
+            ],
+            [
+              88.92219999999999,
+              24.5201
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Talaimoja_Kakonhat_3",
+        "region": "Rajshahi, Bangladesh",
+        "center_lat": 24.5251,
+        "center_lng": 88.9342,
+        "source": "AgriPulse Screenshot"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.9302,
+              24.5201
+            ],
+            [
+              88.9302,
+              24.530099999999997
+            ],
+            [
+              88.9382,
+              24.530099999999997
+            ],
+            [
+              88.9382,
+              24.5201
+            ],
+            [
+              88.9302,
+              24.5201
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Talaimoja_Kakonhat_4",
+        "region": "Rajshahi, Bangladesh",
+        "center_lat": 24.5251,
+        "center_lng": 88.9422,
+        "source": "AgriPulse Screenshot"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.9382,
+              24.5201
+            ],
+            [
+              88.9382,
+              24.530099999999997
+            ],
+            [
+              88.9462,
+              24.530099999999997
+            ],
+            [
+              88.9462,
+              24.5201
+            ],
+            [
+              88.9382,
+              24.5201
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Talaimoja_Kakonhat_5",
+        "region": "Rajshahi, Bangladesh",
+        "center_lat": 24.5251,
+        "center_lng": 88.9502,
+        "source": "AgriPulse Screenshot"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.9462,
+              24.5201
+            ],
+            [
+              88.9462,
+              24.530099999999997
+            ],
+            [
+              88.9542,
+              24.530099999999997
+            ],
+            [
+              88.9542,
+              24.5201
+            ],
+            [
+              88.9462,
+              24.5201
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Talaimoja_Kakonhat_6",
+        "region": "Rajshahi, Bangladesh",
+        "center_lat": 24.5351,
+        "center_lng": 88.91819999999998,
+        "source": "AgriPulse Screenshot"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.9142,
+              24.530099999999997
+            ],
+            [
+              88.9142,
+              24.5401
+            ],
+            [
+              88.92219999999999,
+              24.5401
+            ],
+            [
+              88.92219999999999,
+              24.530099999999997
+            ],
+            [
+              88.9142,
+              24.530099999999997
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Talaimoja_Kakonhat_7",
+        "region": "Rajshahi, Bangladesh",
+        "center_lat": 24.5351,
+        "center_lng": 88.9262,
+        "source": "AgriPulse Screenshot"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.92219999999999,
+              24.530099999999997
+            ],
+            [
+              88.92219999999999,
+              24.5401
+            ],
+            [
+              88.9302,
+              24.5401
+            ],
+            [
+              88.9302,
+              24.530099999999997
+            ],
+            [
+              88.92219999999999,
+              24.530099999999997
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Talaimoja_Kakonhat_8",
+        "region": "Rajshahi, Bangladesh",
+        "center_lat": 24.5351,
+        "center_lng": 88.9342,
+        "source": "AgriPulse Screenshot"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.9302,
+              24.530099999999997
+            ],
+            [
+              88.9302,
+              24.5401
+            ],
+            [
+              88.9382,
+              24.5401
+            ],
+            [
+              88.9382,
+              24.530099999999997
+            ],
+            [
+              88.9302,
+              24.530099999999997
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Talaimoja_Kakonhat_9",
+        "region": "Rajshahi, Bangladesh",
+        "center_lat": 24.5351,
+        "center_lng": 88.9422,
+        "source": "AgriPulse Screenshot"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.9382,
+              24.530099999999997
+            ],
+            [
+              88.9382,
+              24.5401
+            ],
+            [
+              88.9462,
+              24.5401
+            ],
+            [
+              88.9462,
+              24.530099999999997
+            ],
+            [
+              88.9382,
+              24.530099999999997
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Talaimoja_Kakonhat_10",
+        "region": "Rajshahi, Bangladesh",
+        "center_lat": 24.5351,
+        "center_lng": 88.9502,
+        "source": "AgriPulse Screenshot"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.9462,
+              24.530099999999997
+            ],
+            [
+              88.9462,
+              24.5401
+            ],
+            [
+              88.9542,
+              24.5401
+            ],
+            [
+              88.9542,
+              24.530099999999997
+            ],
+            [
+              88.9462,
+              24.530099999999997
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Talaimoja_Kakonhat_11",
+        "region": "Rajshahi, Bangladesh",
+        "center_lat": 24.545099999999998,
+        "center_lng": 88.91819999999998,
+        "source": "AgriPulse Screenshot"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.9142,
+              24.5401
+            ],
+            [
+              88.9142,
+              24.5501
+            ],
+            [
+              88.92219999999999,
+              24.5501
+            ],
+            [
+              88.92219999999999,
+              24.5401
+            ],
+            [
+              88.9142,
+              24.5401
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Talaimoja_Kakonhat_12",
+        "region": "Rajshahi, Bangladesh",
+        "center_lat": 24.545099999999998,
+        "center_lng": 88.9262,
+        "source": "AgriPulse Screenshot"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.92219999999999,
+              24.5401
+            ],
+            [
+              88.92219999999999,
+              24.5501
+            ],
+            [
+              88.9302,
+              24.5501
+            ],
+            [
+              88.9302,
+              24.5401
+            ],
+            [
+              88.92219999999999,
+              24.5401
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Talaimoja_Kakonhat_13",
+        "region": "Rajshahi, Bangladesh",
+        "center_lat": 24.545099999999998,
+        "center_lng": 88.9342,
+        "source": "AgriPulse Screenshot"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.9302,
+              24.5401
+            ],
+            [
+              88.9302,
+              24.5501
+            ],
+            [
+              88.9382,
+              24.5501
+            ],
+            [
+              88.9382,
+              24.5401
+            ],
+            [
+              88.9302,
+              24.5401
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Talaimoja_Kakonhat_14",
+        "region": "Rajshahi, Bangladesh",
+        "center_lat": 24.545099999999998,
+        "center_lng": 88.9422,
+        "source": "AgriPulse Screenshot"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.9382,
+              24.5401
+            ],
+            [
+              88.9382,
+              24.5501
+            ],
+            [
+              88.9462,
+              24.5501
+            ],
+            [
+              88.9462,
+              24.5401
+            ],
+            [
+              88.9382,
+              24.5401
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Talaimoja_Kakonhat_15",
+        "region": "Rajshahi, Bangladesh",
+        "center_lat": 24.545099999999998,
+        "center_lng": 88.9502,
+        "source": "AgriPulse Screenshot"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.9462,
+              24.5401
+            ],
+            [
+              88.9462,
+              24.5501
+            ],
+            [
+              88.9542,
+              24.5501
+            ],
+            [
+              88.9542,
+              24.5401
+            ],
+            [
+              88.9462,
+              24.5401
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Talaimoja_Kakonhat_16",
+        "region": "Rajshahi, Bangladesh",
+        "center_lat": 24.5551,
+        "center_lng": 88.91819999999998,
+        "source": "AgriPulse Screenshot"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.9142,
+              24.5501
+            ],
+            [
+              88.9142,
+              24.5601
+            ],
+            [
+              88.92219999999999,
+              24.5601
+            ],
+            [
+              88.92219999999999,
+              24.5501
+            ],
+            [
+              88.9142,
+              24.5501
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Talaimoja_Kakonhat_17",
+        "region": "Rajshahi, Bangladesh",
+        "center_lat": 24.5551,
+        "center_lng": 88.9262,
+        "source": "AgriPulse Screenshot"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.92219999999999,
+              24.5501
+            ],
+            [
+              88.92219999999999,
+              24.5601
+            ],
+            [
+              88.9302,
+              24.5601
+            ],
+            [
+              88.9302,
+              24.5501
+            ],
+            [
+              88.92219999999999,
+              24.5501
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Talaimoja_Kakonhat_18",
+        "region": "Rajshahi, Bangladesh",
+        "center_lat": 24.5551,
+        "center_lng": 88.9342,
+        "source": "AgriPulse Screenshot"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.9302,
+              24.5501
+            ],
+            [
+              88.9302,
+              24.5601
+            ],
+            [
+              88.9382,
+              24.5601
+            ],
+            [
+              88.9382,
+              24.5501
+            ],
+            [
+              88.9302,
+              24.5501
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Talaimoja_Kakonhat_19",
+        "region": "Rajshahi, Bangladesh",
+        "center_lat": 24.5551,
+        "center_lng": 88.9422,
+        "source": "AgriPulse Screenshot"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.9382,
+              24.5501
+            ],
+            [
+              88.9382,
+              24.5601
+            ],
+            [
+              88.9462,
+              24.5601
+            ],
+            [
+              88.9462,
+              24.5501
+            ],
+            [
+              88.9382,
+              24.5501
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Talaimoja_Kakonhat_20",
+        "region": "Rajshahi, Bangladesh",
+        "center_lat": 24.5551,
+        "center_lng": 88.9502,
+        "source": "AgriPulse Screenshot"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.9462,
+              24.5501
+            ],
+            [
+              88.9462,
+              24.5601
+            ],
+            [
+              88.9542,
+              24.5601
+            ],
+            [
+              88.9542,
+              24.5501
+            ],
+            [
+              88.9462,
+              24.5501
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

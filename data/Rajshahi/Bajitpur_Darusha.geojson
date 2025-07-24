@@ -1,0 +1,825 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bazitpur_Darusha_1",
+        "region": "Rajshahi, Bangladesh",
+        "center_lat": 24.4337,
+        "center_lng": 88.53576000000001,
+        "source": "AgriPulse Screenshot",
+        "Grower": "EU RESEARCH AND DEVELOPMENT AGENCY",
+        "Farm": "Bangladesh",
+        "Crops": "Others",
+        "Sowing Date": "24/07/2025"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5313,
+              24.4292
+            ],
+            [
+              88.5313,
+              24.438200000000002
+            ],
+            [
+              88.54022,
+              24.438200000000002
+            ],
+            [
+              88.54022,
+              24.4292
+            ],
+            [
+              88.5313,
+              24.4292
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bazitpur_Darusha_2",
+        "region": "Rajshahi, Bangladesh",
+        "center_lat": 24.4337,
+        "center_lng": 88.54468,
+        "source": "AgriPulse Screenshot",
+        "Grower": "EU RESEARCH AND DEVELOPMENT AGENCY",
+        "Farm": "Bangladesh",
+        "Crops": "Others",
+        "Sowing Date": "24/07/2025"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.54022,
+              24.4292
+            ],
+            [
+              88.54022,
+              24.438200000000002
+            ],
+            [
+              88.54914000000001,
+              24.438200000000002
+            ],
+            [
+              88.54914000000001,
+              24.4292
+            ],
+            [
+              88.54022,
+              24.4292
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bazitpur_Darusha_3",
+        "region": "Rajshahi, Bangladesh",
+        "center_lat": 24.4337,
+        "center_lng": 88.5536,
+        "source": "AgriPulse Screenshot",
+        "Grower": "EU RESEARCH AND DEVELOPMENT AGENCY",
+        "Farm": "Bangladesh",
+        "Crops": "Others",
+        "Sowing Date": "24/07/2025"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.54914000000001,
+              24.4292
+            ],
+            [
+              88.54914000000001,
+              24.438200000000002
+            ],
+            [
+              88.55806,
+              24.438200000000002
+            ],
+            [
+              88.55806,
+              24.4292
+            ],
+            [
+              88.54914000000001,
+              24.4292
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bazitpur_Darusha_4",
+        "region": "Rajshahi, Bangladesh",
+        "center_lat": 24.4337,
+        "center_lng": 88.56252,
+        "source": "AgriPulse Screenshot",
+        "Grower": "EU RESEARCH AND DEVELOPMENT AGENCY",
+        "Farm": "Bangladesh",
+        "Crops": "Others",
+        "Sowing Date": "24/07/2025"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.55806,
+              24.4292
+            ],
+            [
+              88.55806,
+              24.438200000000002
+            ],
+            [
+              88.56698,
+              24.438200000000002
+            ],
+            [
+              88.56698,
+              24.4292
+            ],
+            [
+              88.55806,
+              24.4292
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bazitpur_Darusha_5",
+        "region": "Rajshahi, Bangladesh",
+        "center_lat": 24.4337,
+        "center_lng": 88.57144,
+        "source": "AgriPulse Screenshot",
+        "Grower": "EU RESEARCH AND DEVELOPMENT AGENCY",
+        "Farm": "Bangladesh",
+        "Crops": "Others",
+        "Sowing Date": "24/07/2025"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.56698,
+              24.4292
+            ],
+            [
+              88.56698,
+              24.438200000000002
+            ],
+            [
+              88.5759,
+              24.438200000000002
+            ],
+            [
+              88.5759,
+              24.4292
+            ],
+            [
+              88.56698,
+              24.4292
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bazitpur_Darusha_6",
+        "region": "Rajshahi, Bangladesh",
+        "center_lat": 24.442700000000002,
+        "center_lng": 88.53576000000001,
+        "source": "AgriPulse Screenshot",
+        "Grower": "EU RESEARCH AND DEVELOPMENT AGENCY",
+        "Farm": "Bangladesh",
+        "Crops": "Others",
+        "Sowing Date": "24/07/2025"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5313,
+              24.438200000000002
+            ],
+            [
+              88.5313,
+              24.447200000000002
+            ],
+            [
+              88.54022,
+              24.447200000000002
+            ],
+            [
+              88.54022,
+              24.438200000000002
+            ],
+            [
+              88.5313,
+              24.438200000000002
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bazitpur_Darusha_7",
+        "region": "Rajshahi, Bangladesh",
+        "center_lat": 24.442700000000002,
+        "center_lng": 88.54468,
+        "source": "AgriPulse Screenshot",
+        "Grower": "EU RESEARCH AND DEVELOPMENT AGENCY",
+        "Farm": "Bangladesh",
+        "Crops": "Others",
+        "Sowing Date": "24/07/2025"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.54022,
+              24.438200000000002
+            ],
+            [
+              88.54022,
+              24.447200000000002
+            ],
+            [
+              88.54914000000001,
+              24.447200000000002
+            ],
+            [
+              88.54914000000001,
+              24.438200000000002
+            ],
+            [
+              88.54022,
+              24.438200000000002
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bazitpur_Darusha_8",
+        "region": "Rajshahi, Bangladesh",
+        "center_lat": 24.442700000000002,
+        "center_lng": 88.5536,
+        "source": "AgriPulse Screenshot",
+        "Grower": "EU RESEARCH AND DEVELOPMENT AGENCY",
+        "Farm": "Bangladesh",
+        "Crops": "Others",
+        "Sowing Date": "24/07/2025"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.54914000000001,
+              24.438200000000002
+            ],
+            [
+              88.54914000000001,
+              24.447200000000002
+            ],
+            [
+              88.55806,
+              24.447200000000002
+            ],
+            [
+              88.55806,
+              24.438200000000002
+            ],
+            [
+              88.54914000000001,
+              24.438200000000002
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bazitpur_Darusha_9",
+        "region": "Rajshahi, Bangladesh",
+        "center_lat": 24.442700000000002,
+        "center_lng": 88.56252,
+        "source": "AgriPulse Screenshot",
+        "Grower": "EU RESEARCH AND DEVELOPMENT AGENCY",
+        "Farm": "Bangladesh",
+        "Crops": "Others",
+        "Sowing Date": "24/07/2025"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.55806,
+              24.438200000000002
+            ],
+            [
+              88.55806,
+              24.447200000000002
+            ],
+            [
+              88.56698,
+              24.447200000000002
+            ],
+            [
+              88.56698,
+              24.438200000000002
+            ],
+            [
+              88.55806,
+              24.438200000000002
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bazitpur_Darusha_10",
+        "region": "Rajshahi, Bangladesh",
+        "center_lat": 24.442700000000002,
+        "center_lng": 88.57144,
+        "source": "AgriPulse Screenshot",
+        "Grower": "EU RESEARCH AND DEVELOPMENT AGENCY",
+        "Farm": "Bangladesh",
+        "Crops": "Others",
+        "Sowing Date": "24/07/2025"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.56698,
+              24.438200000000002
+            ],
+            [
+              88.56698,
+              24.447200000000002
+            ],
+            [
+              88.5759,
+              24.447200000000002
+            ],
+            [
+              88.5759,
+              24.438200000000002
+            ],
+            [
+              88.56698,
+              24.438200000000002
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bazitpur_Darusha_11",
+        "region": "Rajshahi, Bangladesh",
+        "center_lat": 24.451700000000002,
+        "center_lng": 88.53576000000001,
+        "source": "AgriPulse Screenshot",
+        "Grower": "EU RESEARCH AND DEVELOPMENT AGENCY",
+        "Farm": "Bangladesh",
+        "Crops": "Others",
+        "Sowing Date": "24/07/2025"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5313,
+              24.447200000000002
+            ],
+            [
+              88.5313,
+              24.4562
+            ],
+            [
+              88.54022,
+              24.4562
+            ],
+            [
+              88.54022,
+              24.447200000000002
+            ],
+            [
+              88.5313,
+              24.447200000000002
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bazitpur_Darusha_12",
+        "region": "Rajshahi, Bangladesh",
+        "center_lat": 24.451700000000002,
+        "center_lng": 88.54468,
+        "source": "AgriPulse Screenshot",
+        "Grower": "EU RESEARCH AND DEVELOPMENT AGENCY",
+        "Farm": "Bangladesh",
+        "Crops": "Others",
+        "Sowing Date": "24/07/2025"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.54022,
+              24.447200000000002
+            ],
+            [
+              88.54022,
+              24.4562
+            ],
+            [
+              88.54914000000001,
+              24.4562
+            ],
+            [
+              88.54914000000001,
+              24.447200000000002
+            ],
+            [
+              88.54022,
+              24.447200000000002
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bazitpur_Darusha_13",
+        "region": "Rajshahi, Bangladesh",
+        "center_lat": 24.451700000000002,
+        "center_lng": 88.5536,
+        "source": "AgriPulse Screenshot",
+        "Grower": "EU RESEARCH AND DEVELOPMENT AGENCY",
+        "Farm": "Bangladesh",
+        "Crops": "Others",
+        "Sowing Date": "24/07/2025"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.54914000000001,
+              24.447200000000002
+            ],
+            [
+              88.54914000000001,
+              24.4562
+            ],
+            [
+              88.55806,
+              24.4562
+            ],
+            [
+              88.55806,
+              24.447200000000002
+            ],
+            [
+              88.54914000000001,
+              24.447200000000002
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bazitpur_Darusha_14",
+        "region": "Rajshahi, Bangladesh",
+        "center_lat": 24.451700000000002,
+        "center_lng": 88.56252,
+        "source": "AgriPulse Screenshot",
+        "Grower": "EU RESEARCH AND DEVELOPMENT AGENCY",
+        "Farm": "Bangladesh",
+        "Crops": "Others",
+        "Sowing Date": "24/07/2025"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.55806,
+              24.447200000000002
+            ],
+            [
+              88.55806,
+              24.4562
+            ],
+            [
+              88.56698,
+              24.4562
+            ],
+            [
+              88.56698,
+              24.447200000000002
+            ],
+            [
+              88.55806,
+              24.447200000000002
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bazitpur_Darusha_15",
+        "region": "Rajshahi, Bangladesh",
+        "center_lat": 24.451700000000002,
+        "center_lng": 88.57144,
+        "source": "AgriPulse Screenshot",
+        "Grower": "EU RESEARCH AND DEVELOPMENT AGENCY",
+        "Farm": "Bangladesh",
+        "Crops": "Others",
+        "Sowing Date": "24/07/2025"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.56698,
+              24.447200000000002
+            ],
+            [
+              88.56698,
+              24.4562
+            ],
+            [
+              88.5759,
+              24.4562
+            ],
+            [
+              88.5759,
+              24.447200000000002
+            ],
+            [
+              88.56698,
+              24.447200000000002
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bazitpur_Darusha_16",
+        "region": "Rajshahi, Bangladesh",
+        "center_lat": 24.4607,
+        "center_lng": 88.53576000000001,
+        "source": "AgriPulse Screenshot",
+        "Grower": "EU RESEARCH AND DEVELOPMENT AGENCY",
+        "Farm": "Bangladesh",
+        "Crops": "Others",
+        "Sowing Date": "24/07/2025"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5313,
+              24.4562
+            ],
+            [
+              88.5313,
+              24.4652
+            ],
+            [
+              88.54022,
+              24.4652
+            ],
+            [
+              88.54022,
+              24.4562
+            ],
+            [
+              88.5313,
+              24.4562
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bazitpur_Darusha_17",
+        "region": "Rajshahi, Bangladesh",
+        "center_lat": 24.4607,
+        "center_lng": 88.54468,
+        "source": "AgriPulse Screenshot",
+        "Grower": "EU RESEARCH AND DEVELOPMENT AGENCY",
+        "Farm": "Bangladesh",
+        "Crops": "Others",
+        "Sowing Date": "24/07/2025"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.54022,
+              24.4562
+            ],
+            [
+              88.54022,
+              24.4652
+            ],
+            [
+              88.54914000000001,
+              24.4652
+            ],
+            [
+              88.54914000000001,
+              24.4562
+            ],
+            [
+              88.54022,
+              24.4562
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bazitpur_Darusha_18",
+        "region": "Rajshahi, Bangladesh",
+        "center_lat": 24.4607,
+        "center_lng": 88.5536,
+        "source": "AgriPulse Screenshot",
+        "Grower": "EU RESEARCH AND DEVELOPMENT AGENCY",
+        "Farm": "Bangladesh",
+        "Crops": "Others",
+        "Sowing Date": "24/07/2025"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.54914000000001,
+              24.4562
+            ],
+            [
+              88.54914000000001,
+              24.4652
+            ],
+            [
+              88.55806,
+              24.4652
+            ],
+            [
+              88.55806,
+              24.4562
+            ],
+            [
+              88.54914000000001,
+              24.4562
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bazitpur_Darusha_19",
+        "region": "Rajshahi, Bangladesh",
+        "center_lat": 24.4607,
+        "center_lng": 88.56252,
+        "source": "AgriPulse Screenshot",
+        "Grower": "EU RESEARCH AND DEVELOPMENT AGENCY",
+        "Farm": "Bangladesh",
+        "Crops": "Others",
+        "Sowing Date": "24/07/2025"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.55806,
+              24.4562
+            ],
+            [
+              88.55806,
+              24.4652
+            ],
+            [
+              88.56698,
+              24.4652
+            ],
+            [
+              88.56698,
+              24.4562
+            ],
+            [
+              88.55806,
+              24.4562
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bazitpur_Darusha_20",
+        "region": "Rajshahi, Bangladesh",
+        "center_lat": 24.4607,
+        "center_lng": 88.57144,
+        "source": "AgriPulse Screenshot",
+        "Grower": "EU RESEARCH AND DEVELOPMENT AGENCY",
+        "Farm": "Bangladesh",
+        "Crops": "Others",
+        "Sowing Date": "24/07/2025"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.56698,
+              24.4562
+            ],
+            [
+              88.56698,
+              24.4652
+            ],
+            [
+              88.5759,
+              24.4652
+            ],
+            [
+              88.5759,
+              24.4562
+            ],
+            [
+              88.56698,
+              24.4562
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,745 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dhuroil_Mohonpur_1",
+        "region": "Rajshahi, Bangladesh",
+        "center_lat": 24.4755,
+        "center_lng": 88.5823,
+        "source": "AgriPulse Screenshot"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5783,
+              24.4705
+            ],
+            [
+              88.5783,
+              24.4805
+            ],
+            [
+              88.5863,
+              24.4805
+            ],
+            [
+              88.5863,
+              24.4705
+            ],
+            [
+              88.5783,
+              24.4705
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dhuroil_Mohonpur_2",
+        "region": "Rajshahi, Bangladesh",
+        "center_lat": 24.4755,
+        "center_lng": 88.5903,
+        "source": "AgriPulse Screenshot"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5863,
+              24.4705
+            ],
+            [
+              88.5863,
+              24.4805
+            ],
+            [
+              88.5943,
+              24.4805
+            ],
+            [
+              88.5943,
+              24.4705
+            ],
+            [
+              88.5863,
+              24.4705
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dhuroil_Mohonpur_3",
+        "region": "Rajshahi, Bangladesh",
+        "center_lat": 24.4755,
+        "center_lng": 88.5983,
+        "source": "AgriPulse Screenshot"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5943,
+              24.4705
+            ],
+            [
+              88.5943,
+              24.4805
+            ],
+            [
+              88.6023,
+              24.4805
+            ],
+            [
+              88.6023,
+              24.4705
+            ],
+            [
+              88.5943,
+              24.4705
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dhuroil_Mohonpur_4",
+        "region": "Rajshahi, Bangladesh",
+        "center_lat": 24.4755,
+        "center_lng": 88.6063,
+        "source": "AgriPulse Screenshot"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.6023,
+              24.4705
+            ],
+            [
+              88.6023,
+              24.4805
+            ],
+            [
+              88.61030000000001,
+              24.4805
+            ],
+            [
+              88.61030000000001,
+              24.4705
+            ],
+            [
+              88.6023,
+              24.4705
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dhuroil_Mohonpur_5",
+        "region": "Rajshahi, Bangladesh",
+        "center_lat": 24.4755,
+        "center_lng": 88.61430000000001,
+        "source": "AgriPulse Screenshot"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.61030000000001,
+              24.4705
+            ],
+            [
+              88.61030000000001,
+              24.4805
+            ],
+            [
+              88.6183,
+              24.4805
+            ],
+            [
+              88.6183,
+              24.4705
+            ],
+            [
+              88.61030000000001,
+              24.4705
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dhuroil_Mohonpur_6",
+        "region": "Rajshahi, Bangladesh",
+        "center_lat": 24.485500000000002,
+        "center_lng": 88.5823,
+        "source": "AgriPulse Screenshot"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5783,
+              24.4805
+            ],
+            [
+              88.5783,
+              24.4905
+            ],
+            [
+              88.5863,
+              24.4905
+            ],
+            [
+              88.5863,
+              24.4805
+            ],
+            [
+              88.5783,
+              24.4805
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dhuroil_Mohonpur_7",
+        "region": "Rajshahi, Bangladesh",
+        "center_lat": 24.485500000000002,
+        "center_lng": 88.5903,
+        "source": "AgriPulse Screenshot"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5863,
+              24.4805
+            ],
+            [
+              88.5863,
+              24.4905
+            ],
+            [
+              88.5943,
+              24.4905
+            ],
+            [
+              88.5943,
+              24.4805
+            ],
+            [
+              88.5863,
+              24.4805
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dhuroil_Mohonpur_8",
+        "region": "Rajshahi, Bangladesh",
+        "center_lat": 24.485500000000002,
+        "center_lng": 88.5983,
+        "source": "AgriPulse Screenshot"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5943,
+              24.4805
+            ],
+            [
+              88.5943,
+              24.4905
+            ],
+            [
+              88.6023,
+              24.4905
+            ],
+            [
+              88.6023,
+              24.4805
+            ],
+            [
+              88.5943,
+              24.4805
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dhuroil_Mohonpur_9",
+        "region": "Rajshahi, Bangladesh",
+        "center_lat": 24.485500000000002,
+        "center_lng": 88.6063,
+        "source": "AgriPulse Screenshot"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.6023,
+              24.4805
+            ],
+            [
+              88.6023,
+              24.4905
+            ],
+            [
+              88.61030000000001,
+              24.4905
+            ],
+            [
+              88.61030000000001,
+              24.4805
+            ],
+            [
+              88.6023,
+              24.4805
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dhuroil_Mohonpur_10",
+        "region": "Rajshahi, Bangladesh",
+        "center_lat": 24.485500000000002,
+        "center_lng": 88.61430000000001,
+        "source": "AgriPulse Screenshot"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.61030000000001,
+              24.4805
+            ],
+            [
+              88.61030000000001,
+              24.4905
+            ],
+            [
+              88.6183,
+              24.4905
+            ],
+            [
+              88.6183,
+              24.4805
+            ],
+            [
+              88.61030000000001,
+              24.4805
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dhuroil_Mohonpur_11",
+        "region": "Rajshahi, Bangladesh",
+        "center_lat": 24.4955,
+        "center_lng": 88.5823,
+        "source": "AgriPulse Screenshot"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5783,
+              24.4905
+            ],
+            [
+              88.5783,
+              24.500500000000002
+            ],
+            [
+              88.5863,
+              24.500500000000002
+            ],
+            [
+              88.5863,
+              24.4905
+            ],
+            [
+              88.5783,
+              24.4905
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dhuroil_Mohonpur_12",
+        "region": "Rajshahi, Bangladesh",
+        "center_lat": 24.4955,
+        "center_lng": 88.5903,
+        "source": "AgriPulse Screenshot"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5863,
+              24.4905
+            ],
+            [
+              88.5863,
+              24.500500000000002
+            ],
+            [
+              88.5943,
+              24.500500000000002
+            ],
+            [
+              88.5943,
+              24.4905
+            ],
+            [
+              88.5863,
+              24.4905
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dhuroil_Mohonpur_13",
+        "region": "Rajshahi, Bangladesh",
+        "center_lat": 24.4955,
+        "center_lng": 88.5983,
+        "source": "AgriPulse Screenshot"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5943,
+              24.4905
+            ],
+            [
+              88.5943,
+              24.500500000000002
+            ],
+            [
+              88.6023,
+              24.500500000000002
+            ],
+            [
+              88.6023,
+              24.4905
+            ],
+            [
+              88.5943,
+              24.4905
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dhuroil_Mohonpur_14",
+        "region": "Rajshahi, Bangladesh",
+        "center_lat": 24.4955,
+        "center_lng": 88.6063,
+        "source": "AgriPulse Screenshot"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.6023,
+              24.4905
+            ],
+            [
+              88.6023,
+              24.500500000000002
+            ],
+            [
+              88.61030000000001,
+              24.500500000000002
+            ],
+            [
+              88.61030000000001,
+              24.4905
+            ],
+            [
+              88.6023,
+              24.4905
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dhuroil_Mohonpur_15",
+        "region": "Rajshahi, Bangladesh",
+        "center_lat": 24.4955,
+        "center_lng": 88.61430000000001,
+        "source": "AgriPulse Screenshot"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.61030000000001,
+              24.4905
+            ],
+            [
+              88.61030000000001,
+              24.500500000000002
+            ],
+            [
+              88.6183,
+              24.500500000000002
+            ],
+            [
+              88.6183,
+              24.4905
+            ],
+            [
+              88.61030000000001,
+              24.4905
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dhuroil_Mohonpur_16",
+        "region": "Rajshahi, Bangladesh",
+        "center_lat": 24.5055,
+        "center_lng": 88.5823,
+        "source": "AgriPulse Screenshot"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5783,
+              24.500500000000002
+            ],
+            [
+              88.5783,
+              24.5105
+            ],
+            [
+              88.5863,
+              24.5105
+            ],
+            [
+              88.5863,
+              24.500500000000002
+            ],
+            [
+              88.5783,
+              24.500500000000002
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dhuroil_Mohonpur_17",
+        "region": "Rajshahi, Bangladesh",
+        "center_lat": 24.5055,
+        "center_lng": 88.5903,
+        "source": "AgriPulse Screenshot"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5863,
+              24.500500000000002
+            ],
+            [
+              88.5863,
+              24.5105
+            ],
+            [
+              88.5943,
+              24.5105
+            ],
+            [
+              88.5943,
+              24.500500000000002
+            ],
+            [
+              88.5863,
+              24.500500000000002
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dhuroil_Mohonpur_18",
+        "region": "Rajshahi, Bangladesh",
+        "center_lat": 24.5055,
+        "center_lng": 88.5983,
+        "source": "AgriPulse Screenshot"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5943,
+              24.500500000000002
+            ],
+            [
+              88.5943,
+              24.5105
+            ],
+            [
+              88.6023,
+              24.5105
+            ],
+            [
+              88.6023,
+              24.500500000000002
+            ],
+            [
+              88.5943,
+              24.500500000000002
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dhuroil_Mohonpur_19",
+        "region": "Rajshahi, Bangladesh",
+        "center_lat": 24.5055,
+        "center_lng": 88.6063,
+        "source": "AgriPulse Screenshot"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.6023,
+              24.500500000000002
+            ],
+            [
+              88.6023,
+              24.5105
+            ],
+            [
+              88.61030000000001,
+              24.5105
+            ],
+            [
+              88.61030000000001,
+              24.500500000000002
+            ],
+            [
+              88.6023,
+              24.500500000000002
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dhuroil_Mohonpur_20",
+        "region": "Rajshahi, Bangladesh",
+        "center_lat": 24.5055,
+        "center_lng": 88.61430000000001,
+        "source": "AgriPulse Screenshot"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.61030000000001,
+              24.500500000000002
+            ],
+            [
+              88.61030000000001,
+              24.5105
+            ],
+            [
+              88.6183,
+              24.5105
+            ],
+            [
+              88.6183,
+              24.500500000000002
+            ],
+            [
+              88.61030000000001,
+              24.500500000000002
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}
