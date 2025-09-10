@@ -181,10 +181,21 @@ def read_acquisitions_stats(stat_data):
 def get_ndvi_timeseries():
     """Get NDVI time series data using Sentinel Hub Statistical API"""
     try:
-        # Load field geometry
-        fields_gdf = gpd.read_file(str(fields_geojson))
-        geometry = Geometry(geometry=fields_gdf.geometry.iloc[0], crs=CRS.WGS84)
+        # Load field geometry from GeoJSON - use the first simple polygon
+        simple_field = {
+            "type": "Polygon",
+            "coordinates": [[
+                [16.744666, -19.013074],
+                [16.744623, -19.017335],
+                [16.755781, -19.017335],
+                [16.755781, -19.013399],
+                [16.744666, -19.013074]
+            ]]
+        }
         
+        # Create geometry object directly
+        geometry = Geometry(geometry=simple_field, crs=CRS.WGS84)
+        print(f"Created geometry for field analysis")
         # Create statistical request
         request = SentinelHubStatistical(
             aggregation=SentinelHubStatistical.aggregation(
@@ -204,6 +215,7 @@ def get_ndvi_timeseries():
         
         # Get data from Sentinel Hub
         response = request.get_data()
+        print(response)
         
         # Process response
         if response and len(response) > 0 and 'data' in response[0]:
@@ -302,12 +314,6 @@ def root():
     }), 200
 
 if __name__ == '__main__':
-    print("Starting NDVI Time Series API server...")
-    print("Available endpoints:")
-    print("  - GET /field-status : Get NDVI time series data")
-    print("  - GET /health : Health check")
-    print("  - GET / : API information")
-    print("")
     print("Server will run on http://localhost:4800")
     
     # Run the Flask application on port 4800
